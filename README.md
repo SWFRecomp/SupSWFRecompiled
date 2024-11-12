@@ -1,12 +1,12 @@
-# SWFRecomp
+# SupSWFRecompiled
 
-This is a stupid idea.
+So was this not a stupid idea either?
 
-# Let's do it anyway.
+# ...no this one was pretty dumb.
 
-SWFRecomp is largely inspired by Wiseguy's [N64Recomp](https://github.com/N64Recomp/N64Recomp), a static recompiler (not emulator) for N64 games that translates N64 MIPS instructions into C code that can be compiled into a native port. You should probably check that out, because it's epic. So is he. :D
+This project steals a lot of the CMakeLists.txt file from [Zelda64Recomp](https://github.com/Zelda64Recomp/Zelda64Recomp), a project recompiled with Wiseguy's [N64Recomp](https://github.com/N64Recomp/N64Recomp).
 
-This project aims to do the same thing, except with SWF files, i.e. Adobe Flash applications.
+This testbench brings everything full circle. It makes use of both SWFRecomp repos to build a native pc port of a simple SWF.
 
 ## So is this like, illegal or whatever?
 
@@ -16,7 +16,7 @@ They even went as far as to [donate the Flex 3 SDK to Apache](https://www.pcworl
 
 ## So what can this do right now?
 
-Currently it successfully decompresses "C" SWFs and reads the data from the header.
+This runs a call to `trace` from SWF version 4, using the original DoAction system (not ActionScript 3).
 
 # Special Thanks
 
